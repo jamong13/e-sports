@@ -1,0 +1,46 @@
+.pager {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 2000;
+}
+
+.pager-item {
+  position: relative;
+  width: 120px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.pager-dot {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #6f7a87;
+  transition: 0.25s ease;
+}
+
+.pager-label {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.pager-item.active .pager-dot {
+  width: 16px;
+  height: 16px;
+  background: var(--color-accent);
+}

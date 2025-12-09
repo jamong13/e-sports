@@ -1,0 +1,76 @@
+/* HEADER WRAPPER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  background: rgba(5, 11, 22, 0.75); /* var(--color-bg-dark) 기반 */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+
+  display: flex;
+  align-items: center;
+  z-index: 3000;
+}
+
+/* INNER LAYOUT */
+.header-inner {
+  width: 100%;
+  max-width: var(--section-width);
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+/* NAVIGATION */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.nav a {
+  font-family: var(--font-title);
+  font-size: 15px;
+  color: var(--color-gray-300);
+  letter-spacing: 1px;
+  transition: 0.25s ease;
+}
+
+.nav a:hover {
+  color: var(--color-accent);
+}
+
+/* JOIN BUTTON (토큰 기반) */
+.btn-join {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  padding: 10px 24px;
+  font-size: var(--text-body);
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-join:hover {
+  background: #59e0ff;
+}
