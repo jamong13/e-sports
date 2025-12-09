@@ -1,0 +1,176 @@
+/* -----FONT IMPORT----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap");
+
+/* ------DESIGN TOKENS (SOO CURRENT Branding)----- */
+:root {
+  /* Brand Colors */
+  --color-primary: #0c1e3a; /* Deep Navy */
+  --color-accent: #32d1ff; /* Electric Aqua */
+
+  /* Background Palette */
+  --color-bg-dark: #050b16;
+  --color-bg-deep: #071423;
+  --color-bg-surface: #0f1d33;
+  --color-bg-light: #f7faff;
+  --color-bg-white: #ffffff;
+
+  /* Neutral */
+  --color-gray-100: #dde6f3;
+  --color-gray-300: #a8b4c9;
+  --color-gray-500: #8a94a5;
+  --color-gray-700: #566076;
+
+  /* Status */
+  --color-success: #4ade80;
+  --color-error: #ef4444;
+  --color-info: #60a5fa;
+
+  /* Typography */
+  --font-title: "Poppins", sans-serif;
+  --font-body: "Noto Sans KR", sans-serif;
+
+  --text-h1: 48px;
+  --text-h2: 32px;
+  --text-h3: 24px;
+  --text-subtitle: 20px;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-button: 16px;
+
+  /* Spacing Scale */
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  /* Layout */
+  --section-width: 1200px;
+  --radius: 16px;
+  --border-light: rgba(255, 255, 255, 0.06);
+}
+
+/* -----BASE STYLE----- */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg-dark);
+  color: var(--color-gray-100);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* -----TYPOGRAPHY----- */
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  color: var(--color-gray-100);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--text-h1);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: var(--font-body);
+  font-size: var(--text-subtitle);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--text-body);
+  color: var(--color-gray-300);
+  line-height: 1.6;
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 600;
+}
+
+/* -----SECTION----- */
+.section {
+  max-width: var(--section-width);
+  margin: 0 auto;
+  padding: var(--space-24) 24px;
+}
+
+.section-title {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+/* -----CARD SYSTEM----- */
+.card {
+  background: var(--color-bg-surface);
+  padding: 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* -----BUTTONS----- */
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  padding: 12px 32px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 12px 32px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* -----SCROLLBAR----- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
