@@ -1,0 +1,103 @@
+.roster {
+  padding: 120px 0;
+  background: var(--color-primary);
+}
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.player-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: 0.35s ease;
+  position: relative;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-accent);
+  box-shadow: 0 15px 35px rgba(0, 200, 255, 0.25);
+}
+
+.card-image {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.player-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.role-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  padding: 6px 14px;
+  background: rgba(0, 200, 255, 0.25);
+  border: 1px solid rgba(0, 200, 255, 0.4);
+  border-radius: 20px;
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(3px);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h3 {
+  font-size: 18px;
+  color: var(--color-gray-100);
+  margin-bottom: 4px;
+}
+
+.player-name {
+  font-size: 14px;
+  color: var(--color-gray-400);
+}
+
+/* stats */
+.player-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.player-stats .label {
+  font-size: 12px;
+  color: var(--color-gray-400);
+}
+
+.player-stats .value {
+  display: block;
+  font-size: 16px;
+  color: var(--color-accent);
+  font-weight: 700;
+}

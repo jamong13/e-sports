@@ -1,0 +1,100 @@
+.about {
+  padding: 120px 0;
+}
+
+.about-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image {
+  position: relative;
+  display: inline-block;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+/* 좌상단 코너 */
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 60px;
+  height: 60px;
+
+  border-top: 4px solid #00c8ff;
+  border-left: 4px solid #00c8ff;
+  border-radius: 10px 0 0 0;
+}
+
+/* 우하단 코너 */
+.about-image::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  width: 60px;
+  height: 60px;
+
+  border-bottom: 4px solid #00c8ff;
+  border-right: 4px solid #00c8ff;
+  border-radius: 0 0 10px 0;
+}
+
+.about-info h3 {
+  font-size: 28px;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+.about-info p.about-description {
+  margin-top: 12px;
+  font-size: 14px;
+}
+.about-details {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* detail-box */
+.detail-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px 24px;
+
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* 제목 */
+.detail-box h4 {
+  font-size: 16px;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/* 내용 */
+.detail-box p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-200);
+}
+
+/* hover 시 확대 + 강조 효과 */
+.detail-box:hover {
+  transform: scale(1.1);
+  border-color: var(--color-accent);
+  box-shadow: 0px 8px 24px rgba(0, 200, 255, 0.2);
+}

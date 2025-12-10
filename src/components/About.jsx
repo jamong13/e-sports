@@ -21,23 +21,28 @@ export default function About() {
               SOO CURRENT는 전 세계 무대에서 활약하는 e-sports 팀으로, 뛰어난
               집중력과 전략적인 플레이를 바탕으로 꾸준히 성과를 내고 있습니다.
             </p>
+            <p className="about-description">
+              우리는 단순히 게임을 플레이하는 것이 아니라, e스포츠의 미래를
+              만들어갑니다. 팀워크, 헌신, 그리고 끊임없는 개선을 통해 최고의
+              자리에 오르기 위해 노력합니다.
+            </p>
 
             <div className="about-details">
               <div className="detail-box">
-                <h4>창단</h4>
-                <p>2018</p>
+                <h4>Precision</h4>
+                <p>정확한 플레이와 전략적 판단</p>
               </div>
               <div className="detail-box">
-                <h4>팀원 수</h4>
-                <p>7명</p>
+                <h4>Teamwork</h4>
+                <p>완벽한 팀 시너지와 협력</p>
               </div>
               <div className="detail-box">
-                <h4>코치</h4>
-                <p>2명</p>
+                <h4>Innovation</h4>
+                <p>혁신적인 메타 개척과 도전</p>
               </div>
               <div className="detail-box">
-                <h4>주 종목</h4>
-                <p>Minecraft PvP</p>
+                <h4>Excellence</h4>
+                <p>최고를 향한 끊임없는 여정</p>
               </div>
             </div>
           </div>

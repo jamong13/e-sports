@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 60px;
   display: flex;
   align-items: center;
@@ -20,12 +20,12 @@
   filter: blur(2px);
   z-index: 1;
 }
-
-/* Content */
-.hero-content {
-  position: relative;
-  z-index: 5;
-  text-align: center;
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 15, 40, 0.55), rgba(0, 20, 50, 0.55));
+  z-index: 1;
 }
 
 /* 파도 */
@@ -36,9 +36,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 120%;
+  width: 100%;
   height: 500px;
-  bottom: -200px;
+  bottom: -460px;
 
   background: rgba(50, 209, 255, 0.18);
 
@@ -48,43 +48,62 @@
   will-change: transform;
 }
 .wave-back {
-  clip-path: ellipse(130% 45% at 50% 100%);
+  background: rgba(0, 160, 255, 0.12);
+  clip-path: path(
+    "M0 260
+    C 150 200, 400 150, 700 200
+    S 1200 300, 1440 240
+    L1440 500 L0 500Z"
+  );
 }
+
 .wave-mid {
-  clip-path: ellipse(110% 55% at 50% 100%);
+  background: rgba(0, 160, 255, 0.17);
+  clip-path: path(
+    "M0 300
+      C 250 380, 550 420, 850 260
+      S 1250 120, 1440 280
+      L1440 500 L0 500Z"
+  );
 }
+
 .wave-front {
-  clip-path: ellipse(90% 65% at 50% 100%);
+  background: rgba(0, 160, 255, 0.23);
+  clip-path: path(
+    "M0 340
+        C 300 480, 650 520, 1000 300
+        S 1350 80, 1440 340
+        L1440 500 L0 500Z"
+  );
 }
-/* Tag */
-.hero-tag {
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.hero-content h6 {
   font-size: 14px;
-  letter-spacing: 2px;
+  display: inline-block;
   color: var(--color-accent);
-  background: rgba(255, 255, 255, 0.08);
-  padding: 8px 16px;
-  border-radius: 12px;
   font-weight: 600;
+  border: 2px solid var(--color-accent);
+  border-radius: 30px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-/* Title */
-.hero-title {
-  margin-top: 24px;
-  font-size: 56px;
-  font-weight: 700;
-  color: var(--color-gray-100);
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
-/* Description */
-.hero-desc {
+.hero-content .hero-txt {
   margin-top: 20px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: var(--text-body);
   color: var(--color-gray-300);
   line-height: 1.6;
+  padding: 32px 48px;
+  background: rgba(12, 30, 58, 0.7);
+  border: 2px solid rgba(50, 209, 255, 0.2);
+  border-radius: 16px;
 }
 
 /* Buttons */
@@ -103,18 +122,22 @@
   gap: 40px;
 }
 
-.stat-card {
+.stat {
   text-align: center;
+  background: rgba(12, 30, 58, 0.7);
+  border: 2px solid rgba(50, 209, 255, 0.2);
+  border-radius: 16px;
+  padding: 32px 48px;
 }
 
-.stat-card h3 {
+.stat h3 {
   font-size: 32px;
   color: var(--color-accent);
   margin-bottom: 8px;
   font-weight: 700;
 }
 
-.stat-card p {
+.stat p {
   color: var(--color-gray-300);
 }
 

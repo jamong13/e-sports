@@ -57,8 +57,11 @@
 .nav a:hover {
   color: var(--color-accent);
 }
+.nav a.active {
+  color: var(--color-accent);
+}
 
-/* JOIN BUTTON (토큰 기반) */
+/* JOIN */
 .btn-join {
   background: var(--color-accent);
   color: var(--color-primary);

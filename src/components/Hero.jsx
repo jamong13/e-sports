@@ -32,16 +32,21 @@ export default function Hero() {
       </div>
 
       <div className="hero-content">
+        <h6>ESPORTS TEAM</h6>
         <h1>SOO CURRENT</h1>
-        <p>
+        <p className="hero-txt">
           우리는 최고의 플레이를 위해 노력하는 프로 e-sports 팀입니다.
           <br />
           승리를 위한 열정, 팀워크, 그리고 끝없는 도전을 이어갑니다.
         </p>
 
         <div className="hero-buttons">
-          <button className="btn-primary">팀 소개</button>
-          <button className="btn-outline">경기 일정</button>
+          <a href="#roster" className="btn-primary">
+            팀 멤버 보기
+          </a>
+          <a href="#schedule" className="btn-secondary">
+            경기 일정
+          </a>
         </div>
 
         <div className="hero-stats">
