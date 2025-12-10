@@ -1,0 +1,138 @@
+.partners {
+  padding: 120px 0;
+  text-align: center;
+  background: var(--color-primary);
+}
+
+.partners-desc {
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.partner-card {
+  background: #0f1b2d;
+  border-radius: 20px;
+  padding: 50px 20px;
+  transition: 0.35s ease;
+  border: 2px solid transparent;
+}
+
+.partner-card:hover {
+  transform: translateY(-10px);
+  border-color: #52c7ff;
+  box-shadow: 0 0 20px rgba(82, 199, 255, 0.3);
+}
+
+.icon-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  background: #132238;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(82, 199, 255, 0.5);
+}
+
+.partner-icon {
+  font-size: 58px;
+  color: #cfe9ff;
+}
+
+.partner-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.label {
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.partner-icon {
+  font-size: 58px;
+}
+
+.partner-icon.purple {
+  color: #a678ff;
+}
+
+.partner-icon.orange {
+  color: #ff9a3e;
+}
+
+.partner-icon.sky {
+  color: #7cd4ff;
+}
+
+.partner-icon.lime {
+  color: #a4ff7a;
+}
+
+.partner-icon.brown {
+  color: #d49a6a;
+}
+
+.partner-icon.cloud {
+  color: #e2f3ff;
+}
+
+.partner-cta {
+  margin-top: 100px;
+  padding: 70px 50px;
+  background: #0d1526;
+  border-radius: 25px;
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba(80, 200, 255, 0.15);
+}
+
+.partner-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.partner-cta h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.partner-cta p {
+  opacity: 0.75;
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background: #8bdcff;
+  padding: 14px 38px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cta-btn:hover {
+  background: linear-gradient(135deg, #b4e7ff, #7ed9ff);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(130, 220, 255, 0.5);
+}

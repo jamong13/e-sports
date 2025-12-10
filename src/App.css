@@ -1,10 +1,3 @@
-/* -----SECTION----- */
-.section {
-  width: 100%;
-  max-width: var(--section-width);
-  margin: 0 auto;
-  padding: var(--space-24) 24px;
-}
 /* 공통 컨테이너 */
 .container {
   width: 100%;

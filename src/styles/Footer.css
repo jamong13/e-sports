@@ -1,0 +1,80 @@
+.footer {
+  background: #0d1625;
+  padding: 70px 0 40px;
+  color: #d3e4ff;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-brand-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.footer-brand-desc {
+  opacity: 0.75;
+  line-height: 1.6;
+  max-width: 300px;
+  margin-bottom: 25px;
+}
+
+.footer-team {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: 2px solid #57c4ff;
+  background: transparent;
+  color: #57c4ff;
+  font-weight: 600;
+  transition: 0.25s ease;
+  display: inline-block;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.footer-column a {
+  color: var(--color-gray-100);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.25s ease;
+}
+
+.footer-column a:hover {
+  opacity: 1;
+  color: var(--color-gray-300);
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-copy {
+  text-align: center;
+  opacity: 0.6;
+}
