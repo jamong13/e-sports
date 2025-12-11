@@ -12,7 +12,7 @@ export default function Hero() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero section">
       <div className="hero-bg"></div>
       <div className="waves">
         <div

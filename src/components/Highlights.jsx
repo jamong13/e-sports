@@ -4,7 +4,7 @@ import { Trophy, Target, Users, TrendingUp } from "lucide-react";
 
 export default function Highlights() {
   return (
-    <section id="highlights" className="highlights">
+    <section id="highlights" className="highlights section">
       <div className="container">
         <h2 className="section-title">HIGHLIGHTS & ACHIEVEMENTS</h2>
 

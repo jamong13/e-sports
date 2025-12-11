@@ -1,5 +1,4 @@
 .roster {
-  padding: 120px 0;
   background: var(--color-primary);
 }
 
@@ -100,4 +99,16 @@
   font-size: 16px;
   color: var(--color-accent);
   font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .roster-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .roster-grid {
+    grid-template-columns: 1fr;
+  }
 }

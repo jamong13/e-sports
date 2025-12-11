@@ -118,3 +118,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 1240px) {
+  :root {
+    --text-h1: 2.5rem;
+    --text-h2: 1.8rem;
+    --text-h3: 1.2rem;
+    --text-subtitle: 1.1rem;
+    --text-body: 16px;
+    --text-small: 14px;
+    --text-button: 16px;
+  }
+}

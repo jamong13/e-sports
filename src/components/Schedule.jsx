@@ -5,7 +5,7 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="schedule">
+    <section id="schedule" className="schedule section">
       <div className="container">
         <h2 className="section-title">MATCH SCHEDULE & RESULTS</h2>
 
@@ -24,7 +24,7 @@ export default function Schedule() {
 
                 <span className="vs">VS</span>
 
-                <div className="team dragon">
+                <div className="team team-right dragon">
                   <span className="team-name">Dragon Force</span>
                   <FaDragon />
                 </div>
@@ -50,7 +50,7 @@ export default function Schedule() {
 
                 <span className="vs">VS</span>
 
-                <div className="team thunder">
+                <div className="team team-right thunder">
                   <span className="team-name">Thunder Wolves</span>
                   <AiOutlineThunderbolt />
                 </div>
@@ -76,7 +76,7 @@ export default function Schedule() {
 
                 <span className="vs">VS</span>
 
-                <div className="team ghost">
+                <div className="team team-right ghost">
                   <span className="team-name">Shadow Legends</span>
                   <FaGhost />
                 </div>
@@ -98,9 +98,9 @@ export default function Schedule() {
             <div className="result-card">
               <span className="date">NOV 28</span>
               <div className="result-body">
-                <span className="team">SOO CURRENT</span>
+                <span className="team left-team">SOO CURRENT</span>
                 <span className="score">3 - 1</span>
-                <span className="team">Storm Riders</span>
+                <span className="team right-team">Storm Riders</span>
               </div>
               <span className="badge win">WIN</span>
             </div>
@@ -108,9 +108,9 @@ export default function Schedule() {
             <div className="result-card">
               <span className="date">NOV 21</span>
               <div className="result-body">
-                <span className="team">SOO CURRENT</span>
+                <span className="team left-team">SOO CURRENT</span>
                 <span className="score">3 - 0</span>
-                <span className="team">Ice Giants</span>
+                <span className="team right-team">Ice Giants</span>
               </div>
               <span className="badge win">WIN</span>
             </div>
@@ -118,9 +118,9 @@ export default function Schedule() {
             <div className="result-card">
               <span className="date">NOV 14</span>
               <div className="result-body">
-                <span className="team">SOO CURRENT</span>
+                <span className="team left-team">SOO CURRENT</span>
                 <span className="score">2 - 3</span>
-                <span className="team">Fire Hawks</span>
+                <span className="team right-team">Fire Hawks</span>
               </div>
               <span className="badge lose">LOSS</span>
             </div>

@@ -54,7 +54,7 @@ export default function Roster() {
   ];
 
   return (
-    <section id="roster" className="roster">
+    <section id="roster" className="roster section">
       <div className="container">
         <h2 className="section-title">OUR ROSTER</h2>
 

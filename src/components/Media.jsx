@@ -101,7 +101,7 @@ export default function Media() {
     }
   };
   return (
-    <section id="media" className="media">
+    <section id="media" className="media section">
       <div className="container">
         <h2 className="section-title">MEDIA & HIGHLIGHTS</h2>
 
@@ -119,6 +119,24 @@ export default function Media() {
             swiperRef.current = swiper;
           }}
           className="media-swiper"
+          breakpoints={{
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 28,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+            },
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 12,
+            },
+          }}
         >
           {videos.map((video, i) => (
             <SwiperSlide key={i}>
@@ -172,6 +190,24 @@ export default function Media() {
             galleryRef.current = swiper;
           }}
           className="gallery-swiper"
+          breakpoints={{
+            1100: {
+              slidesPerView: 4,
+              spaceBetween: 28,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 12,
+            },
+          }}
         >
           {gallery.map((img, i) => (
             <SwiperSlide key={i}>

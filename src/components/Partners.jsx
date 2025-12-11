@@ -8,7 +8,7 @@ import { GiTShirt, GiOfficeChair } from "react-icons/gi";
 
 export default function Partners() {
   return (
-    <section id="partners" className="partners">
+    <section id="partners" className="partners section">
       <div className="container">
         <h2 className="section-title">PARTNERS & SPONSORS</h2>
         <p className="partners-desc">

@@ -9,7 +9,7 @@ import {
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact section">
       <div className="container">
         <h2 className="section-title">GET IN TOUCH</h2>
         <p className="contact-desc">
